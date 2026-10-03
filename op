@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bobby Bhaiya — Official Telegram Channel</title>
+<meta name="description" content="Join Bobby Bhaiya's official Telegram channel for daily updates, tips aur exclusive content.">
+
+<!-- ===== META PIXEL ===== -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1400223202270912');
+  fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1400223202270912&ev=PageView&noscript=1"/>
+</noscript>
+<!-- ===== END META PIXEL ===== -->
+
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+
+  html, body { height:100%; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: #07070d;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 24px;
+  }
+
+  /* ---------- Animated background ---------- */
+  .bg-glow {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+  }
+  .blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: .55;
+    animation: float 14s ease-in-out infinite;
+  }
+  .blob.b1 {
+    width: 420px; height: 420px;
+    background: #229ED9;
+    top: -120px; left: -120px;
+  }
+  .blob.b2 {
+    width: 380px; height: 380px;
+    background: #7b2ff7;
+    bottom: -140px; right: -100px;
+    animation-delay: -5s;
+  }
+  .blob.b3 {
+    width: 260px; height: 260px;
+    background: #00d4ff;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: .25;
+    animation-delay: -9s;
+  }
+  @keyframes float {
+    0%,100% { transform: translate(0,0) scale(1); }
+    33%     { transform: translate(40px,-30px) scale(1.12); }
+    66%     { transform: translate(-30px,35px) scale(.92); }
+  }
+
+  /* subtle grid overlay */
+  .grid-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    background-image:
+      linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+    background-size: 46px 46px;
+    mask-image: radial-gradient(ellipse 80% 70% at 50% 45%, #000 20%, transparent 78%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 45%, #000 20%, transparent 78%);
+    pointer-events: none;
+  }
+
+  /* ---------- Card ---------- */
+  .card {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 460px;
+    text-align: center;
+    padding: 44px 30px 40px;
+    border-radius: 28px;
+    background: rgba(255,255,255,.045);
+    border: 1px solid rgba(255,255,255,.10);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+    box-shadow:
+      0 24px 70px rgba(0,0,0,.65),
+      inset 0 1px 0 rgba(255,255,255,.10);
+    animation: rise .8s cubic-bezier(.2,.8,.2,1) both;
+  }
+  @keyframes rise {
+    from { opacity:0; transform: translateY(26px) scale(.97); }
+    to   { opacity:1; transform: translateY(0) scale(1); }
+  }
+
+  /* ---------- Avatar ---------- */
+  .avatar-wrap {
+    position: relative;
+    width: 104px; height: 104px;
+    margin: 0 auto 22px;
+  }
+  .avatar-ring {
+    position: absolute;
+    inset: -6px;
+    border-radius: 50%;
+    background: conic-gradient(from 0deg, #229ED9, #7b2ff7, #00d4ff, #229ED9);
+    animation: spin 5s linear infinite;
+    filter: blur(1px);
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .avatar {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: linear-gradient(150deg, #1c1c2b, #0d0d16);
+    border: 3px solid #07070d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    background-clip: padding-box;
+    color: #fff;
+    overflow: hidden;
+  }
+  .avatar span {
+    background: linear-gradient(135deg,#5ec8ff,#a06bff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* ---------- Text ---------- */
+  .verified {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+    color: #6fd0ff;
+    background: rgba(34,158,217,.12);
+    border: 1px solid rgba(34,158,217,.30);
+    padding: 6px 13px;
+    border-radius: 100px;
+    margin-bottom: 16px;
+  }
+  .verified .dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: #4ade80;
+    box-shadow: 0 0 8px #4ade80;
+    animation: blink 1.6s ease-in-out infinite;
+  }
+  @keyframes blink { 50% { opacity:.35; } }
+
+  h1 {
+    font-size: clamp(32px, 9vw, 42px);
+    font-weight: 800;
+    letter-spacing: -.025em;
+    line-height: 1.1;
+    background: linear-gradient(180deg,#ffffff 25%,#9aa4b8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 12px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    line-height: 1.65;
+    color: #9aa4b8;
+    max-width: 320px;
+    margin: 0 auto 28px;
+  }
+  .subtitle b { color:#d7dde8; font-weight:600; }
+
+  /* ---------- Big CTA Button ---------- */
+  .btn-wrap {
+    position: relative;
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 340px;
+  }
+
+  /* pulse rings behind button */
+  .btn-wrap::before,
+  .btn-wrap::after {
+    content:'';
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    background: rgba(34,158,217,.55);
+    z-index: -1;
+    animation: pulse 2.6s cubic-bezier(.4,0,.6,1) infinite;
+  }
+  .btn-wrap::after { animation-delay: 1.3s; }
+  @keyframes pulse {
+    0%   { transform: scale(1);    opacity:.55; }
+    100% { transform: scale(1.22); opacity:0; }
+  }
+
+  .btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    padding: 21px 26px;
+    border: none;
+    border-radius: 20px;
+    font-family: inherit;
+    font-size: 19px;
+    font-weight: 800;
+    letter-spacing: .01em;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    background: linear-gradient(135deg, #2AA5E0 0%, #1E88C7 45%, #7b2ff7 100%);
+    background-size: 200% 200%;
+    box-shadow:
+      0 10px 30px rgba(34,158,217,.42),
+      0 4px 12px rgba(123,47,247,.30),
+      inset 0 1px 0 rgba(255,255,255,.28);
+    transition: transform .18s ease, box-shadow .18s ease, background-position .5s ease;
+    animation: gradientMove 6s ease infinite;
+    overflow: hidden;
+  }
+  @keyframes gradientMove {
+    0%,100% { background-position: 0% 50%; }
+    50%     { background-position: 100% 50%; }
+  }
+
+  /* shine sweep */
+  .btn::after {
+    content:'';
+    position: absolute;
+    top: 0; left: -120%;
+    width: 60%; height: 100%;
+    background: linear-gradient(100deg, transparent, rgba(255,255,255,.42), transparent);
+    transform: skewX(-20deg);
+    animation: shine 3.4s ease-in-out infinite;
+  }
+  @keyframes shine {
+    0%   { left: -120%; }
+    55%  { left: 130%; }
+    100% { left: 130%; }
+  }
+
+  .btn:hover  { transform: translateY(-3px); box-shadow: 0 16px 40px rgba(34,158,217,.55), 0 6px 18px rgba(123,47,247,.40), inset 0 1px 0 rgba(255,255,255,.32); }
+  .btn:active { transform: translateY(-1px) scale(.985); }
+
+  .btn svg { flex-shrink: 0; }
+
+  .btn-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.15;
+  }
+  .btn-text small {
+    font-size: 11px;
+    font-weight: 600;
+    opacity: .82;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+  }
+
+  /* ---------- Meta info ---------- */
+  .meta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    font-size: 12.5px;
+    color: #737d90;
+    margin-top: 6px;
+  }
+  .meta i {
+    display: inline-block;
+    width: 3px; height: 3px;
+    border-radius: 50%;
+    background: #4a5265;
+  }
+
+  .foot {
+    position: relative;
+    z-index: 2;
+    margin-top: 26px;
+    font-size: 11px;
+    color: #4d5566;
+    letter-spacing: .04em;
+  }
+
+  @media (max-width: 380px) {
+    .card { padding: 34px 20px 32px; border-radius: 24px; }
+    .btn { font-size: 17px; padding: 19px 20px; }
+    .avatar-wrap { width: 88px; height: 88px; }
+    .avatar { font-size: 36px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="bg-glow">
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+</div>
+<div class="grid-overlay"></div>
+
+<main class="card">
+
+  <div class="avatar-wrap">
+    <div class="avatar-ring"></div>
+    <div class="avatar"><span>BB</span></div>
+  </div>
+
+  <div class="verified"><span class="dot"></span> Official Channel</div>
+
+  <h1>Bobby Bhaiya</h1>
+
+  <p class="subtitle">
+    Daily <b>updates</b>, exclusive <b>tips</b> aur premium content — sab kuch sabse pehle yahin milega.
+  </p>
+
+  <div class="btn-wrap">
+    <a class="btn"
+       id="joinBtn"
+       href="https://t.me/+zUnQBBcXi2I1NzI9"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Join Bobby Bhaiya Telegram Channel">
+
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M21.9 4.3 18.7 19.4c-.24 1.07-.87 1.33-1.77.83l-4.9-3.61-2.36 2.27c-.26.26-.48.48-.98.48l.35-4.98 9.05-8.18c.4-.35-.08-.54-.6-.19L6.3 13.13l-4.8-1.5c-1.05-.33-1.07-1.05.22-1.55l18.8-7.25c.87-.32 1.63.2 1.38 1.47Z" fill="#fff"/>
+      </svg>
+
+      <span class="btn-text">
+        <small>Click to Join</small>
+        Join Telegram Channel
+      </span>
+    </a>
+  </div>
+
+  <div class="meta">
+    <span>🔒 100% Free</span>
+    <i></i>
+    <span>⚡ Instant Access</span>
+  </div>
+
+  <p class="foot">© <span id="yr"></span> Bobby Bhaiya — All rights reserved</p>
+
+</main>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  /* Fire Pixel events on click */
+  var btn = document.getElementById('joinBtn');
+  btn.addEventListener('click', function () {
+    if (typeof fbq === 'function') {
+      fbq('track', 'Lead', {
+        content_name: 'Telegram Join - Bobby Bhaiya',
+        content_category: 'Telegram Channel'
+      });
+      fbq('trackCustom', 'TelegramJoinClick');
+    }
+  });
+</script>
+
+</body>
+</html>
